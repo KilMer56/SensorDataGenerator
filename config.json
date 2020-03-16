@@ -1,0 +1,23 @@
+{
+    "rate": 5,
+    "sensors": [
+        {
+            "min": 10,
+            "max": 30,
+            "step": 0.5,
+            "label": "Temperature"
+        },
+        {
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "Humidity"
+        },
+        {
+            "min": 15,
+            "max": 25,
+            "step": 0.25,
+            "label": "Vibration"
+        }
+    ]
+}
