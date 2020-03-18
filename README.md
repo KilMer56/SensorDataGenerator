@@ -4,12 +4,11 @@ A very simple and easy to use data generator in order to mock Sensors.
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Support](#support)
 - [Contributing](#contributing)
 
-## Installation
+## Usage
 
 To install the project, you juste need to run :
 
@@ -18,7 +17,7 @@ git clone https://github.com/KilMer56/SensorDataGenerator.git
 python3 main.py [params]
 ```
 
-## Parameters
+### Parameters
 
 | Parameter | Short | Type    | Description                               | Default   |
 | --------- | :---: | :-----: | :---------------------------------------: | --------: |
@@ -30,9 +29,23 @@ python3 main.py [params]
 | --label   |  -l   | String  |  Label of the sensor                      | 'Unknown' |
 | --value   |  -v   | String  |  First value of the sensor                | Random    |
 
-
 Feel free to suggest any parameter you want to add.
 
+### Config File Example
+
+```json
+{
+    "rate": 5,
+    "sensors": [
+        {
+            "min": 10,
+            "max": 30,
+            "step": 0.5,
+            "label": "Temperature"
+        }
+    ]
+}
+```
 ## Support
 
 Please [open an issue](https://github.com/KilMer56/SensorDataGenerator/issues/new) for support.
